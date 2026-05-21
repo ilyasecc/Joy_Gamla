@@ -395,3 +395,22 @@
         }
     });
 </script>
+
+
+//NOMI AI
+<!-- INOM Chat Widget - Add this before closing </body> tag -->
+  <script id="inom-chat-widget" assistant-id="019e491a-5561-78ca-b2fe-7221ce22d7d4">
+    (function() {
+      var scriptTag = document.getElementById('inom-chat-widget');
+      var assistantId = scriptTag.getAttribute('assistant-id');
+      window.InomChatWidget = {
+        assistantId: assistantId
+      };
+      var s = document.createElement('script');
+      s.src = 'https://d2y50uul2so7jh.cloudfront.net/widgets/website-ai-assistant/widget.min.js';
+      s.async = true;
+      s.defer = true;
+      document.body.appendChild(s);
+    })();
+  </script>
+  <!-- End INOM Chat Widget -->
